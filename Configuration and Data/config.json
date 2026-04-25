@@ -1,0 +1,74 @@
+{ 
+    "verssion 1.0": {
+        "name": "Economic Config",
+        "description": "Lấy từ excel",
+"balance":{
+    "gold_bat_dau(start_gold)": 500,
+    "gold_max(max_gold)": 3000000000,
+    "stamina":100,
+    "stamina_max":100
+},
+"action_per_day":200,
+"action_distribution":{
+    "kill_monster":0.55,
+    "sell_loot":0.25,
+    "buy_potion":0.12,
+    "rapair": 0.08
+},
+"gold_drops":{
+"drop_chance": 1,
+"min_amount":2,
+"max_amount":5
+},
+"loot_table":[
+    
+    {
+        "item_id":"kiếm_cũ",
+        "drop_chance":0.45,
+        "npc_sell_price ":3.50
+    },
+    {
+        "item_id":"kiếm_gỗ",
+        "drop_chance":0.12,
+        "npc_sell_price ":42.00
+
+    },
+    {
+        "item_id":"thỏi_vàng",
+        "drop_chance":0.03,
+        "npc_sell_price ":350
+    },
+    {
+        "item_id":"kim_cương",
+        "drop_chance":0.005,
+        "npc_sell_price ":2100
+    }
+
+],
+"shop":{
+    "npc_buy_discount":0.7
+},
+"potions": {
+    "health_potion": {
+        "cost": 30,
+        "heal_amount": 30
+    },
+    "stamina_potion": {
+        "cost": 50,
+        "restore_amount": 30
+    }
+},
+"sinks": {
+    "repair_sword_cost":100,
+    "rapair_armor_cost":100,
+    "upgrade_sword_cost":500,
+    "upgrade_armor_cost":500
+},
+
+"quest": {
+    "daily_quest_count": 3,
+    "quest_reward_base": 200
+}
+}
+
+}
